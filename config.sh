@@ -22,5 +22,5 @@ if [ -z $LD_LIBRARY_PATH ]; then
   Updating LD_LIBRARY_PATH and PATH env variables
  ----------------------------"
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ubuntu/CRAC-plugin/contrib/split-cuda/:/usr/local/cuda-10.2/lib64
-    export PATH=$PATH:/home/ubuntu/CRAC-plugin/contrib/split-cuda:/home/ubuntu/CRAC-plugin/bin:/usr/local/cuda-10.2/bin
+    export PATH=$PATH:/home/ubuntu/CRAC-plugin/contrib/split-cuda:/home/ubuntu/CRAC-plugin/bin:/usr/local/cuda-10.2/bin:~/CRAC-plugin/bin
 fi
