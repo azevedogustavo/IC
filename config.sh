@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~
 if [ ! -d "CRAC-plugin/" ]; then
     echo " ----------------------------
   Cloning repository
