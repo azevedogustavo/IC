@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~
 if [ ! -d "CRAC-plugin/" ]; then
     echo " ----------------------------
   Cloning repository
@@ -20,4 +21,6 @@ if [ -z $LD_LIBRARY_PATH ]; then
         echo " ----------------------------
   Updating LD_LIBRARY_PATH and PATH env variables
  ----------------------------"
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ubuntu/CRAC-plugin/contrib/split-cuda/:/usr/local/cuda-10.0/lib64
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ubuntu/CRAC-plugin/contrib/split-cuda/:/usr/local/cuda-10.2/lib64
+    export PATH=$PATH:/home/ubuntu/CRAC-plugin/contrib/split-cuda:/home/ubuntu/CRAC-plugin/bin:/usr/local/cuda-10.2/bin:~/CRAC-plugin/bin
+fi
